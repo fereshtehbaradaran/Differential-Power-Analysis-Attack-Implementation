@@ -18,4 +18,4 @@ SBOX = [
 
 
 def calculateSboxOutput(plainText, key):
-    return [plainText ^ key]
+    return SBOX[plainText ^ key]
