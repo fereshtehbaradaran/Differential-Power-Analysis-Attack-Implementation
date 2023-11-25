@@ -42,5 +42,5 @@ for i in range(len(key)):
     key[i] = np.where(meanDiffs == max(meanDiffs))[0][0]
     print("byte", i, ":", key[i])
     print(time.time() - strartTime)
-    
-print(key)
+   
+print("Key =", *list(map(hex, key)))
